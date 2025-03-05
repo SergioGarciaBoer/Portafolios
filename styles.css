@@ -53,6 +53,27 @@ footer {
 Habilities
 */
 
+div.hide-habilities{
+    border-bottom: solid gray;
+    border-top: solid gray;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.hide-habilities:hover {
+ cursor: pointer;
+}
+
+div.hide-habilities:hover svg{
+    transform: rotate(90deg);
+   }
+
+.hide-habilities svg {
+    transition: transform 0.3s ease-in-out;
+}
+
 .habilities {
     background-color: #f4f4f4;
     padding: 50px 0;
@@ -60,7 +81,7 @@ Habilities
 }
 
 .container-habilities {
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
@@ -90,4 +111,29 @@ Habilities
     width: 50px;
     height: 50px;
     margin-top: 10px;
+}
+
+/*
+Footer
+*/
+
+footer div.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer div.contacto div.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div.contacto div.social p {
+    margin-left: 20px;
+}
+
+footer div.contacto div.social a {
+    margin-left: 20px;
+    color: white;
 }
